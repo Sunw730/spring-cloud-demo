@@ -1,0 +1,13 @@
+server:
+  port: 6200
+
+spring:
+  application:
+    name: demo-config
+  cloud:
+    config:
+      discovery:
+        enabled: false
+      server:
+        git:
+          uri: https://github.com/Sunw730/spring-cloud-demo-config.git
