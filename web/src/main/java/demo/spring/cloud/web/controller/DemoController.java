@@ -1,5 +1,6 @@
 package demo.spring.cloud.web.controller;
 
+import demo.spring.cloud.contract.dto.DemoModel;
 import demo.spring.cloud.contract.iface.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +22,11 @@ public class DemoController {
     @RequestMapping("hello")
     public String hello(String name) {
         return demoService.hello(name);
-//        return "";
+    }
+
+    @RequestMapping("serialize")
+    public String serialize(DemoModel.Demo demo) {
+        return demoService.serialize(demo);
     }
 
 
