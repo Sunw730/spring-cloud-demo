@@ -3,6 +3,7 @@ package demo.spring.cloud.web.controller;
 import demo.spring.cloud.contract.dto.DemoModel;
 import demo.spring.cloud.contract.iface.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +19,8 @@ public class DemoController {
 
     @Autowired
     private DemoService demoService;
+    @Value("${demo.url}")
+    private String site;
 
     @RequestMapping("hello")
     public String hello(String name) {
@@ -29,5 +32,9 @@ public class DemoController {
         return demoService.serialize(demo);
     }
 
+    @RequestMapping("mysite")
+    public String mysite() {
+        return site;
+    }
 
 }

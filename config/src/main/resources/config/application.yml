@@ -10,4 +10,4 @@ spring:
         enabled: false
       server:
         git:
-          uri: https://github.com/Sunw730/spring-cloud-config.git
+          uri: https://github.com/Sunw730/spring-cloud-demo-config.git
