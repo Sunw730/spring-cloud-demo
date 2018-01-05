@@ -2,10 +2,8 @@ package demo.spring.cloud.server.impl;
 
 import demo.spring.cloud.contract.dto.DemoModel;
 import demo.spring.cloud.contract.iface.DemoService;
-import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /*
@@ -25,5 +23,13 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public String serialize(@RequestBody DemoModel.Demo demo) {
         return String.format("{id:%d, name:%s}", demo.getId(), demo.getName());
+    }
+
+    @Override
+    public DemoModel.Demo get(@PathVariable("id") int id) {
+        DemoModel.Demo demo = new DemoModel.Demo();
+        demo.setId(id);
+        demo.setName("Sunw");
+        return demo;
     }
 }
