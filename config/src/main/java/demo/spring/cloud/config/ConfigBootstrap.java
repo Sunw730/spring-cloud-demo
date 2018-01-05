@@ -11,9 +11,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  *
  * @author wang.sun(wang.sun@mtime.com)
  */
-@SpringBootApplication
 @EnableConfigServer
 @EnableEurekaClient
+@SpringBootApplication
 public class ConfigBootstrap {
 
     public static void main(String[] args) {
