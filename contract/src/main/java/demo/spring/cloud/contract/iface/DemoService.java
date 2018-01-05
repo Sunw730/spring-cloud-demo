@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author wang.sun(wang.sun@mtime.com)
  */
 @FeignClient(ServerName.SN_DEMO)
-@RequestMapping("server/demo")
+@RequestMapping("admin/demo")
 public interface DemoService {
 
     @RequestMapping("hello")

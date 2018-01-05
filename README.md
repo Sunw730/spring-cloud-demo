@@ -17,6 +17,6 @@
 * `contract`包
 
     1. 配置类使用`@EnableFeignClients`并设置扫描范围
-    2. 接口中的url不能与WEB项目中的url重复, 建议服务中的url使用统一前缀, 如`/server`
+    2. 接口中的url不能与WEB项目中的url重复, 建议服务中的url使用统一前缀, 如`/admin`,`/front`
     3. 接口参数`@RequestParam`注解不能省略, 并且参数名不能省略
     4. 

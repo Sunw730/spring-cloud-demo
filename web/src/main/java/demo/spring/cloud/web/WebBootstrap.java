@@ -1,6 +1,5 @@
 package demo.spring.cloud.web;
 
-import demo.spring.cloud.contract.ServiceAutoConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;

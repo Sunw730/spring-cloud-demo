@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-server</artifactId>
+    <artifactId>spring-cloud-service</artifactId>
 
     <dependencies>
         <dependency>

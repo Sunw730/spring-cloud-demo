@@ -15,17 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @author wang.sun(wang.sun@mtime.com)
  */
 @RestController
-@RequestMapping("server/demo")
 public class DemoServiceImpl implements DemoService {
 
     @Override
-    @RequestMapping("hello")
     public String hello(String name) {
         return "[Server] name: " + name;
     }
 
     @Override
-    @RequestMapping("serialize")
     public String serialize(@RequestBody DemoModel.Demo demo) {
         return String.format("{id:%d, name:%s}", demo.getId(), demo.getName());
     }

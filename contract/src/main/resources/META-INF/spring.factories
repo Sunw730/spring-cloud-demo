@@ -1,3 +1,4 @@
 # AutoConfiguration
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-demo.spring.cloud.contract.ServiceAutoConfig
+demo.spring.cloud.contract.RequestMappingAutoConfig,\
+demo.spring.cloud.contract.FeignClientsAutoConfig
