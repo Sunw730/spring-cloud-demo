@@ -10,6 +10,6 @@ public class ServerName {
 
     private ServerName() {}
 
-    public static final String SN_DEMO = "demo-server";
+    public static final String SN_DEMO = "demo-service";
 
 }
