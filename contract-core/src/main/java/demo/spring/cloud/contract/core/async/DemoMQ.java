@@ -1,6 +1,5 @@
 package demo.spring.cloud.contract.core.async;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
