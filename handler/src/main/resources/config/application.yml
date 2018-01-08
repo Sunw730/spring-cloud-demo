@@ -1,0 +1,15 @@
+server:
+  port: 6500
+
+spring:
+  application:
+    name: demo-handler
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: sunwang
+    password: 123456
+
+management:
+  security:
+    enabled: false

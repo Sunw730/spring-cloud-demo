@@ -25,6 +25,9 @@
         <module>config</module>
         <module>web</module>
         <module>contract</module>
+        <module>handler</module>
+        <module>task</module>
+        <module>contract-core</module>
     </modules>
 
     <dependencies>
@@ -32,6 +35,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -10,4 +10,5 @@ spring:
         enabled: false
       server:
         git:
-          uri: https://github.com/Sunw730/spring-cloud-demo-config.git
+          uri: https://github.com/Sunw730/spring-cloud-config/
+          search-paths: demo
