@@ -1,8 +1,0 @@
-spring:
-  cloud:
-    config:
-      override-none: true
-
-demo:
-  hello: Sunw
-  url: http://www.jsunw.com
