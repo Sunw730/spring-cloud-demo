@@ -1,0 +1,33 @@
+server:
+  port: 6600
+
+spring:
+  application:
+    name: demo-task
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://${db.mysql.host:localhost}:${db.mysql.port:3306}/${db.mysql.schema}
+#    username: ${db.mysql.username:root}
+#    password: ${db.mysql.password:root}
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#      naming:
+#        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+## mysql
+#db:
+#  mysql:
+#    host: localhost
+#    port: 3306
+#    schema: test
+#    username: root
+#    password: root
+
+task:
+  execute:
+    demo-task:
+      cron: '*/5 * * * * *'
