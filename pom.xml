@@ -28,6 +28,7 @@
         <module>handler</module>
         <module>task</module>
         <module>contract-core</module>
+        <module>test</module>
     </modules>
 
     <dependencies>
